@@ -26,3 +26,5 @@
 
 Програма працює в нескінченному циклі do-while з меню, де користувач вводить
 номер дії.
+
+![Project Image](images/project_image.jpg)
