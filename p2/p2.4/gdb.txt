@@ -1,0 +1,16 @@
+Reading symbols from ./stacker...
+Attaching to program: /mnt/d/IamIT/asps/p2/p2.4/stacker, process 1446
+Reading symbols from /lib/x86_64-linux-gnu/libc.so.6...
+Reading symbols from /usr/lib/debug/.build-id/42/c84c92e6f98126b3e2230ebfdead22c235b667.debug...
+Reading symbols from /lib64/ld-linux-x86-64.so.2...
+Reading symbols from /usr/lib/debug/.build-id/1c/8db5f83bba514f8fd5f1fb6d7be975be1bb855.debug...
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+0x00007fc27fe493d4 in __libc_pause () at ../sysdeps/unix/sysv/linux/pause.c:29
+#0  0x00007fc27fe493d4 in __libc_pause () at ../sysdeps/unix/sysv/linux/pause.c:29
+#1  0x0000557a6e9ef224 in inner_pause () at task.c:11
+#2  0x0000557a6e9ef28c in middle_layer () at task.c:17
+#3  0x0000557a6e9ef2f4 in start_process () at task.c:23
+#4  0x0000557a6e9ef35c in main () at task.c:29
+Detaching from program: /mnt/d/IamIT/asps/p2/p2.4/stacker, process 1446
+[Inferior 1 (process 1446) detached]
