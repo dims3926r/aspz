@@ -30,4 +30,4 @@
 
 ## Інструкція по використанню
 
-![Project Image](images/project_image.jpg)
+![Project Image](https://github.com/dims3926r/aspz/blob/main/p1/Знімок%20екрана%202025-04-12%20234259.png)
