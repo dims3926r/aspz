@@ -18,6 +18,6 @@
 Висновок:
 Вибір параметрів Valgrind істотно впливає на рівень деталізації звітів і здатність знаходити помилки, пов'язані з витоками пам'яті та неініціалізованими даними. Використання --leak-check=full дозволяє знайти всі витоки пам'яті з деталями, а параметр --track-origins=yes дає можливість відстежити походження неініціалізованих значень, що сприяє точному визначенню джерел проблем.
 
-![Example Image](https://github.com/dims3926r/aspz/blob/main/p5//Знімок%20екрана%202025-05-06%20140436.png)
-![Example Image](https://github.com/dims3926r/aspz/blob/main/p5//Знімок%20екрана%202025-05-06%20140453.png)
-![Example Image](https://github.com/dims3926r/aspz/blob/main/p5//Знімок%20екрана%202025-05-06%20140521.png)
+![Example Image](https://github.com/dims3926r/aspz/blob/main/p6/Знімок%20екрана%202025-05-06%20140436.png)
+![Example Image](https://github.com/dims3926r/aspz/blob/main/p6/Знімок%20екрана%202025-05-06%20140453.png)
+![Example Image](https://github.com/dims3926r/aspz/blob/main/p6/Знімок%20екрана%202025-05-06%20140521.png)
