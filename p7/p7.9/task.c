@@ -8,7 +8,7 @@ int main() {
     begin_time = clock();
 
     for (int i = 0; i < 1000000; i++) {
-        int val = i * i;  // Обчислення для навантаження
+        int val = i * i; 
     }
 
     finish_time = clock();
