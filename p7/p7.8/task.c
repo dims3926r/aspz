@@ -13,7 +13,6 @@ int main() {
     char answer;
 
     while ((ent = readdir(d)) != NULL) {
-        // Пропускаємо приховані файли (починаються з '.')
         if (ent->d_name[0] == '.') 
             continue;
 

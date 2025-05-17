@@ -15,11 +15,9 @@ void show_files(const char *directory) {
     struct stat info;
 
     while ((entry = readdir(dir)) != NULL) {
-        // Пропускаємо "." та ".."
         if (strcmp(entry->d_name, ".") == 0 || strcmp(entry->d_name, "..") == 0)
             continue;
 
-        // Формуємо повний шлях
         snprintf(path, sizeof(path), "%s/%s", directory, entry->d_name);
 
         if (stat(path, &info) == -1) {
@@ -28,10 +26,8 @@ void show_files(const char *directory) {
         }
 
         if (S_ISDIR(info.st_mode)) {
-            // Якщо каталог — рекурсивно обходимо його
             show_files(path);
         } else if (S_ISREG(info.st_mode)) {
-            // Якщо звичайний файл — виводимо шлях
             printf("%s\n", path);
         }
     }
