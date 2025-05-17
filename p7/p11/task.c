@@ -21,7 +21,7 @@ int find_command(Command cmds[], int size, const char *cmd) {
 int is_simple_command(const char *cmd) {
     for (int i = 0; cmd[i]; i++) {
         if (cmd[i] == '/' || cmd[i] == '\\')
-            return 0;  // містить шлях, пропускаємо
+            return 0; 
     }
     return 1;
 }
