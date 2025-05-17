@@ -11,7 +11,6 @@ void list_dirs(const char *path) {
     char fullpath[1024];
 
     while ((entry = readdir(dir)) != NULL) {
-        // Пропускаємо "." і ".."
         if (strcmp(entry->d_name, ".") == 0 || strcmp(entry->d_name, "..") == 0)
             continue;
 
@@ -23,7 +22,7 @@ void list_dirs(const char *path) {
 
         if (S_ISDIR(st.st_mode)) {
             printf("%s\n", fullpath);
-            list_dirs(fullpath);  // рекурсивний виклик
+            list_dirs(fullpath);  
         }
     }
 
