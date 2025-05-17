@@ -8,7 +8,6 @@
 #include <unistd.h>
 
 void show_mode(mode_t m) {
-    // Тип файлу
     putchar(S_ISDIR(m) ? 'd' :
             S_ISLNK(m) ? 'l' :
             S_ISCHR(m) ? 'c' :
@@ -16,17 +15,14 @@ void show_mode(mode_t m) {
             S_ISFIFO(m) ? 'p' :
             S_ISSOCK(m) ? 's' : '-');
 
-    // Права для власника
     putchar(m & S_IRUSR ? 'r' : '-');
     putchar(m & S_IWUSR ? 'w' : '-');
     putchar(m & S_IXUSR ? 'x' : '-');
 
-    // Права для групи
     putchar(m & S_IRGRP ? 'r' : '-');
     putchar(m & S_IWGRP ? 'w' : '-');
     putchar(m & S_IXGRP ? 'x' : '-');
 
-    // Права для інших
     putchar(m & S_IROTH ? 'r' : '-');
     putchar(m & S_IWOTH ? 'w' : '-');
     putchar(m & S_IXOTH ? 'x' : '-');
