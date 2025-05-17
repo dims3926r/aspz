@@ -22,7 +22,6 @@ int main() {
         fputs(text, more);
     }
 
-    // Закриваємо обидва
     pclose(rwho);
     pclose(more);
 
